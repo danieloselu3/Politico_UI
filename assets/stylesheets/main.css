@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+    ======================
+    GRID
+    ======================
+*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.body-container {
+    width: 960px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
+
+.header-container {
+
+}
+
+
+/* 
+    ========================
+    General settings
+    ========================
+*/
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+h1, h3, h4, h5, p {
+    line-height: 1.2em;
+    margin-bottom: 10px;
+    word-spacing: 2.5px;
+    letter-spacing: 0.75px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 19px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* 
+    ==========================
+    Buttons
+    ==========================
+*/
+
+.page-header h1 {
+    font-size: 34px;
+    color: rgb(167, 104, 104);
+}
+
+button {
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border: 0.5px solid black;
+    border-radius: 2.5px;
+    background-color: rgb(167, 104, 104);
+}
+
+.header-buttons button {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* 
+    ==========================
+    Header
+    ==========================
+*/
+
+header, footer {
+    height: 100px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px auto;
+    background-color: rgb(241, 241, 241);
+    border-bottom: 0.5px solid black;
+    border-top: 0.5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
