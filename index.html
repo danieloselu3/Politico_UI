@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Politico</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/main.css">
     <!-- <script src="main.js"></script> -->
 </head>
 <body>
     <!-- Header goes here -->
-    <header>
+    <header class="container">
         <div class="page-header">
             <h1>Politico</h1>
         </div>
@@ -25,13 +25,34 @@
     </header>
 
     <!-- main body content goes here -->
-    <section class="body-container">
+    <section class="signup-form container">
+        <div class="signup-form-header">
+            <p>SignUp</p>
+        </div>
+        <div class="signup-form-input">
+            <form>
+                <input type="text" placeholder="firstname">
+                <input type="text" placeholder="lastname">
+                <input type="email" placeholder="email">
+                <input type="text" placeholder="ID/Passport number"> 
+                <input type="password" placeholder="password">
+                <input type="password" placeholder="confirm password">
+            </form>
+        </div>
+        <div class="signup-form-button">
+            <button type="button">Submit</button>
+        </div>
+        <div class="signup-aob">
+            <p>Have an account? LogIn</p>
+        </div>
     </section>
 
     <!-- footer goes here -->
-    <footer>
+    <footer class="container">
         <div class="page-footer">
-            
+            <small>&copy; Politico 2019</small>
+            <small>FAQ</small>
+            <small>Terms and Conditions</small>
         </div>
     </footer>
     

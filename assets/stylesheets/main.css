@@ -60,16 +60,19 @@ table {
             box-sizing: border-box;
 }
 
+.container {
+    width: 960px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
+
 
 /* 
     ========================
     General settings
     ========================
 */
-
-html, body {
-    height: 100%;
-}
 
 body {
     display: flex;
@@ -100,7 +103,7 @@ h5 {
     font-size: 19px;
 }
 
-p {
+p ,input, button {
     font-size: 16px;
 }
 
@@ -130,7 +133,6 @@ button {
     font-weight: bold;
 }
 
-
 /* 
     ==========================
     Header
@@ -139,12 +141,9 @@ button {
 
 header {
     height: 100px;
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 0 auto;
     background-image: linear-gradient(to right, rgba(51, 114, 10, 1), rgba(104, 143, 68, 0.5));
-    border-bottom: 0.5px solid black;
+    border: 0.5px solid black;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -161,12 +160,48 @@ header {
     Main Body Section
     =========================
 */
-.body-container {
-    width: 960px;
-    flex: 1 0 auto;
-    padding: 30px 20px;
-    margin: 0 auto;
+
+.signup-form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 3px 4px black;
+    padding: 10px 20px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
 }
+
+.signup-form-input form{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form-input form input {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.signup-aob {
+    display: flex;
+    flex-direction: row;
+}
+
+.signup-form p {
+    padding-right: 10px;
+    letter-spacing: .25px;
+    word-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.signup-form-button {
+    margin-bottom: 10px;
+}
+
 
 /* 
     =========================
@@ -175,9 +210,19 @@ header {
 */
 
 footer {
-    flex-shrink: 0;
-    padding: 50px 0px;
-    background-color: black;
+    color: #ffffff;
+    background-color: rgb(37, 35, 35);
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.page-footer small {
+    padding-right: 40px;
 }
 
 
